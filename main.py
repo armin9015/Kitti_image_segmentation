@@ -6,7 +6,7 @@ from PIL import Image
 from torchvision import transforms
 
 # Load the model
-model = torch.hub.load('pytorch/vision:v0.10.0', 'fcn_resnet50', pretrained=True)
+model = torch.hub.load('pytorch/vision:v0.8.0', 'deeplabv3_resnet50', pretrained=True)
 model.eval()
 
 # Set the input and output folder paths
